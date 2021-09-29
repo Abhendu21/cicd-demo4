@@ -7,6 +7,8 @@ on:
 jobs:
   first_job:
     runs-on: ubuntu-latest
+    env: |
+      DAY_OF_WEEK: Mon
     strategy:
       max-parallel: 1
     
@@ -17,5 +19,8 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: 3.7.5
+    
+      - name: "Hello world when it's Monday"
+        run: echo "Hello today is $DAY_OF_WEEK"
           
         
