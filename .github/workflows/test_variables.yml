@@ -1,9 +1,9 @@
-name: DEMO DEV PIPELINE
+name: DEMO VARIABLE PIPELINE
 
 on:
   push:
     branches:
-    - '!*'
+    - '*'
 jobs:
   first_job:
     runs-on: ubuntu-latest
