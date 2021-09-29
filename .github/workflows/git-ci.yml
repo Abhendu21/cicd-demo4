@@ -3,7 +3,7 @@ name: DEMO DEV PIPELINE
 on:
   push:
     branches:
-    - 'dev*'
+    - '!*'
 jobs:
   first_job:
     runs-on: ubuntu-latest
